@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Dsw2025Ej8.Domain
+namespace Dsw2025Ej8.Domain;
+
+public class CuentaCajadeAhorro : CuentaBancaria
 {
-    internal class CuentaCajodeAhorro
+    public CuentaCajadeAhorro(string numero, decimal saldo, string[] titulares) : base(numero, saldo, TipoCuenta.CuentaCorriente, titulares)
     {
     }
 }
